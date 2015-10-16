@@ -148,27 +148,27 @@ void PrintKDTree(KDTree* tree, unsigned depth)
 
 
 
-//
-//int main() {
-//
-//
-//	vector<vector<double> > tran(6, vector<double>(2,0));
-//
-//	for(unsigned i = 0;i<6;++i){
-//		for(unsigned j=0;j<2;++j){
-//			tran[i][j] = data[i][j];
-//		}
-//	}
-//
-//	KDTree* tree = new KDTree;
-//	buildKDTree(tree,tran,0);
-//
-//	PrintKDTree(tree, 0);
-//
-//	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-//	return 0;
-//
-//
-//
-//
-//}
+
+int main() {
+
+
+	vector<vector<double> > tran(6, vector<double>(2,0));
+
+	for(unsigned i = 0;i<6;++i){
+		for(unsigned j=0;j<2;++j){
+			tran[i][j] = data[i][j];
+		}
+	}
+
+	KDTree* tree = new KDTree;
+	buildKDTree(tree,tran,0);
+
+	PrintKDTree(tree, 0);
+
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+
+
+
+
+}
